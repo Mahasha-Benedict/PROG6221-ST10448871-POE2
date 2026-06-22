@@ -3,10 +3,9 @@ using System.Collections.Generic;
 
 namespace CybersecurityChatbotGUI
 {
-    /// <summary>
+    /// Summary
     /// QUESTION 6: Enhanced sentiment analyzer for detecting emotions
     /// Detects worried, curious, frustrated, positive, negative, neutral
-    /// </summary>
     public class SentimentAnalyzer
     {
         // QUESTION 8: Using HashSets for efficient lookups
@@ -50,10 +49,9 @@ namespace CybersecurityChatbotGUI
             };
         }
 
-        /// <summary>
+        /// Summary
         /// QUESTION 6: Analyzes message and returns specific sentiment
         /// Returns: worried, curious, frustrated, positive, negative, or neutral
-        /// </summary>
         public string Analyze(string message)
         {
             string lowerMsg = message.ToLower();

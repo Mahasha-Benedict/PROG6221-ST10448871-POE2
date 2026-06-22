@@ -123,5 +123,26 @@ namespace CybersecurityChatbotGUI
                 lblAsciiArt.Text = asciiArt;
             });
         }
+        /// Summary
+        /// Displays quiz question with answer options
+        public void DisplayQuizQuestion(string question)
+        {
+            Dispatcher.Invoke(() =>
+            {
+                // Parse the question to extract multiple choice options if needed
+                // The quiz manager handles formatting in the string
+                AddToChatHistory($"Quiz: {question}", Brushes.Cyan);
+            });
+        }
+
+        ///Summary
+        /// Displays task list with formatting
+        public void DisplayTaskList(string tasks)
+        {
+            Dispatcher.Invoke(() =>
+            {
+                AddToChatHistory($"Tasks: {tasks}", Brushes.LightBlue);
+            });
+        }
     }
 }
