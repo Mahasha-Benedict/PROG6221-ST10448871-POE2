@@ -44,7 +44,8 @@
              FontFamily="Segoe UI" 
              FontSize="12"
              BorderThickness="0"
-             Margin="10">
+             Margin="10"
+             ScrollViewer.VerticalScrollBarVisibility="Visible">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <TextBlock Text="{Binding}" TextWrapping="Wrap"/>
